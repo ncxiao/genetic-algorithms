@@ -1,10 +1,8 @@
 # GA for p-median
 
 from random import random, randint, sample, uniform
-from math import fabs
 
 n = 8
-
 
 distmatrix = [
     [0, 3, 13, 5, 12, 16, 17, 20],
@@ -126,16 +124,6 @@ def GA(param):
     return min(objs), sum(objs)/param.popsize, population
 
 
-param = Parameters(
-    popsize = 4,
-    numgen = 10,
-    pcrossover = 0.9,
-    pmutation = 0.3,
-    elitism = True)
-
-# print([GA(param)[0] for _ in range(10)])
-
-
 # returns the median objective function value 
 def run_many_GAs(n, param):
     all_best = []
@@ -154,4 +142,13 @@ def test():
             res = run_many_GAs(1000, paramx)
             print(pc, pm, res)
 
-test()
+# test()
+
+param = Parameters(
+    popsize = 4,
+    numgen = 10,
+    pcrossover = 0.9,
+    pmutation = 0.3,
+    elitism = True)
+
+print([GA(param)[0] for _ in range(10)])
