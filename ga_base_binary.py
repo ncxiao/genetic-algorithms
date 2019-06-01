@@ -1,7 +1,7 @@
 from ga import *
 from random import randint
 
-class GA(GABase):
+class GABin(GABase):
     def __init__(self, params):
         super().__init__(params)
 
@@ -50,15 +50,16 @@ class GA(GABase):
                 mutated += c
         return mutated
 
-params = Parameters(
-    popsize = 10,
-    numgen = 10,
-    pcrossover = 0.9,
-    pmutation = 0.1,
-    elitism = True)
-    
-myga = GA(params)
-res = myga.run()
-print(res)
+if __name__ == '__main__':
+    params = Parameters(
+        popsize = 10,
+        numgen = 10,
+        pcrossover = 0.9,
+        pmutation = 0.1,
+        elitism = True)
+        
+    myga = GABin(params)
+    res = myga.run()
+    print(res)
 
-print([myga.run()[0] for _ in range(10)])
+    print([myga.run()[0] for _ in range(10)])
