@@ -4,8 +4,8 @@ This repository contains code and documents that demonstrate the essence of gene
 
 ## Example Notebooks
 
-- [genetic algorithms.ipynb](genetic algorithms.ipynb): introduction to genetic algorithms and how to implement them using Python.
-- [GA Class.ipynb](GA Class.ipynb): a Python class called `GA` and how to use it for solving specific numerical and spatial optimization problems.
+- `genetic algorithms.ipynb` introduction to genetic algorithms and how to implement them using Python.
+- `GA Class.ipynb` a Python class called `GA` and how to use it for solving specific numerical and spatial optimization problems.
 
 ## Files
 
