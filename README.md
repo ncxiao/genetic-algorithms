@@ -2,7 +2,7 @@
 
 This repository contains code and documents that demonstrate the essence of genetic algorithms (GAs) and how they can be used for optimization problems. 
 
-We focus on single objective optimization here. For multiobjective optimization using GAs, please see another repo called nsga-ii at https://github.com/ncxiao/nsga-ii.
+We focus on single objective optimization here. For multiobjective optimization using GAs, please see another repo called nsga-ii at https://github.com/ncxiao/nsga-ii, or [this notebook](NSGA-II.ipynb).
 
 ## Example Notebooks
 
